@@ -156,3 +156,90 @@ function eliminarElementoLocalStorage(id) {
 function vaciarLocalStorage() {
   localStorage.removeItem('carrito');
 }
+
+const productos = [
+  {
+    id: 1,
+    nombre: 'Buzo Red Hot',
+    precio: 65000,
+  },
+  {
+    id: 2,
+    nombre: 'Gorra Imagine Dragons',
+    precio: $8500,
+  },
+  {
+    id: 3,
+    nombre: 'Buzo Imagine Dragons',
+    precio: 60000,
+  },
+  {
+    id: 4,
+    nombre: 'Medias Red Hot',
+    precio: 5500,
+  },
+  {
+    id: 5,
+    nombre: 'Piluso Mac Miller',
+    precio: 11999,
+  },
+  {
+    id: 6,
+    nombre: 'Remera Mac Miller',
+    precio: 23999,
+  },
+  {
+    id: 7,
+    nombre: 'Remera Red Hot',
+    precio: 25000,
+  },
+  {
+    id: 8,
+    nombre: 'Short Mac Miller',
+    precio: 18999,
+  },
+
+];
+
+const productContainer = document.getElementById('product-container');
+
+function cargarProductos() {
+  productos.forEach(producto => {
+    const productCard = document.createElement('div');
+    productCard.innerHTML = `
+      <h2>${producto.nombre}</h2>
+      <p>Precio: $${producto.precio}</p>
+      <button onclick="agregarAlCarrito(${producto.id})">Agregar al carrito</button>
+    `;
+    productContainer.appendChild(productCard);
+  });
+}
+
+cargarProductos();
+
+/* Entendi el uso de la funcion Fetch, pero no encontre una api que me ofreciera los datos necesarios para mi pagina por lo que te dejo este codigo demostrando que lo se usar, pero la verdad no tuve tiempo para cambiar mi pagina y usar una api que contenga informacion util. */
+
+/* const productContainer = document.getElementById('product-container');
+
+function cargarProductos() {
+  Simulamos una solicitud ficticia utilizando datos internos
+  fetch('/productos-simulados')
+    .then(response => response.json())
+    .then(productos => {
+      productos.forEach(producto => {
+        const productCard = document.createElement('div');
+        productCard.innerHTML = `
+          <h2>${producto.nombre}</h2>
+          <p>Precio: $${producto.precio}</p>
+          <button onclick="agregarAlCarrito(${producto.id})">Agregar al carrito</button>
+        `;
+        productContainer.appendChild(productCard);
+      });
+    })
+    .catch(error => {
+      console.error('Error al cargar productos:', error);
+    });
+}
+
+cargarProductos();
+*/ 
