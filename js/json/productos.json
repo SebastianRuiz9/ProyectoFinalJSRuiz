@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "nombre": "Buzo Culture",
+        "precio": 18450,
+        "imagen": "https://acdn.mitiendanube.com/stores/622/377/products/82ce240e-6ed0-467d-9e77-2fbf2fa008c2-e6b6fa5f566c30656b16935149651850-480-0.webp"
+    },
+    {
+        "id": 2,
+        "nombre": "Pantalon Cargo Delight",
+        "precio": 23000,
+        "imagen": "https://acdn.mitiendanube.com/stores/622/377/products/e0669c3e-b3cb-410c-8f70-a89c786f218b-ec033f123704c2703116935159314969-480-0.webp"
+    },
+    {
+        "id": 3,
+        "nombre": "Zapatillas Neuss",
+        "precio": 35000,
+        "imagen": "https://acdn.mitiendanube.com/stores/622/377/products/7203d414-b347-4f59-b73a-8c330aeafda8-b2fd7c09b5aad8ea0e16941034868689-480-0.webp"
+    },
+    {
+        "id": 4,
+        "nombre": "Remera Slow",
+        "precio": 12200,
+        "imagen": "https://acdn.mitiendanube.com/stores/622/377/products/6ba12db0-5a8d-4024-9482-8fe195421bba-41f0574e018cbb192416945458945284-480-0.webp"
+    }
+]

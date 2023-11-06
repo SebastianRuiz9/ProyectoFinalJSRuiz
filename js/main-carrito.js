@@ -1,0 +1,3 @@
+actualizarNumeroCarrito();
+renderCarrito();
+ 
